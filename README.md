@@ -11,4 +11,13 @@ Kelas : IF-02-01
 ### Code Server
 ### Code Client
 
-## Dokumentasi Command
+## Dokumentasi dan Penjelasan Command
+
+### Command 'ls'
+### Command 'rm'
+### Command 'download'
+### Command 'upload'
+### Command 'size'
+### Command 'connme'
+
+
