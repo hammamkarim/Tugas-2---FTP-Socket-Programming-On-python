@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
 ## Penjelasan Code Program
 
-### Code Server
+### Server
 ![1](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/4c79d454-e5e3-4c96-9efd-4804a4fe5a19)
 
 - Import Library : Penggalan kode tersebut untuk mengimpor dua modul Python, yaitu socket dan os.
@@ -291,6 +291,15 @@ if __name__ == "__main__":
 - Menampilkan Pesan: Pesan "FTP Server is listening on {} : {}".format(TCP_IP, TCP_PORT) dicetak ke konsol untuk memberi tahu bahwa server telah dimulai dan sedang mendengarkan koneksi di alamat IP dan port yang telah ditentukan.
 - Loop Penerimaan Koneksi: Selanjutnya, program memasuki loop while True: yang berjalan tanpa henti. Di dalam loop ini, server terus-menerus menerima koneksi dari klien menggunakan server_socket.accept(). Setiap kali ada koneksi baru, server menerima koneksi tersebut dan menjalankan fungsi handle_client_connection untuk menangani komunikasi dengan klien.
 - Pengecekan untuk Eksekusi Main: if __name__ == "__main__": memeriksa apakah skrip ini dieksekusi secara langsung (bukan diimpor sebagai modul oleh skrip lain). Jika ya, maka fungsi main() akan dieksekusi.
+
+### Client
+
+![10](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/bbbf9c33-0ce8-4319-a1e9-51b476792b32)
+
+- Import Library: Kode tersebut mengimpor modul socket, yang digunakan untuk membuat dan mengelola koneksi jaringan.
+- TCP_IP: Alamat IP server FTP yang akan dihubungi oleh klien. Dalam kasus ini, alamat loopback "127.0.0.1" digunakan.
+- TCP_PORT: Port yang digunakan oleh server FTP untuk menerima koneksi. Dalam hal ini, port 8080 digunakan.
+- BUFFER_SIZE: Ukuran buffer untuk menerima dan mengirim data antara klien dan server. Dalam kasus ini, ukuran buffer adalah 2048 byte.
 
 ## Dokumentasi dan Penjelasan Command
 
