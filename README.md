@@ -216,9 +216,11 @@ if __name__ == "__main__":
 ### Code Server
 ![1](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/4c79d454-e5e3-4c96-9efd-4804a4fe5a19)
 
-- Import Library: Kode tersebut mengimpor dua modul Python, yaitu socket dan os.
-1. socket digunakan untuk membuat dan mengelola koneksi jaringan.
-2. os digunakan untuk berinteraksi dengan sistem operasi, seperti operasi file dan direktor
+- Item utama
+  - Sub-item 1
+  - Sub-item 2
+- Item lainnya
+
 
 
 ## Dokumentasi dan Penjelasan Command
