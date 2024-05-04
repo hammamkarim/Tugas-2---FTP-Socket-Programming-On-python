@@ -241,8 +241,8 @@ if __name__ == "__main__":
     - Jika perintah dimulai dengan "rm", fungsi delete_file akan dipanggil untuk menghapus file.
     - Jika perintah dimulai dengan "size", fungsi get_file_size akan dipanggil untuk mendapatkan ukuran file.
     - Jika perintah tidak sesuai dengan opsi yang ada, server akan mengirim pesan kepada klien untuk memasukkan perintah yang valid.
-    - 
--Menutup Koneksi: Setelah semua perintah selesai diproses, koneksi dengan klien ditutup menggunakan client_socket.close().
+      
+- Menutup Koneksi: Setelah semua perintah selesai diproses, koneksi dengan klien ditutup menggunakan client_socket.close().
 
 ## Dokumentasi dan Penjelasan Command
 
