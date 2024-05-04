@@ -244,6 +244,16 @@ if __name__ == "__main__":
       
 - Menutup Koneksi: Setelah semua perintah selesai diproses, koneksi dengan klien ditutup menggunakan client_socket.close().
 
+![4](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/e5de80b8-2ac4-4be2-9082-504365207457)
+
+- Definisi Fungsi: def list_files(client_socket): adalah deklarasi fungsi yang mengambil client_socket sebagai argumen. client_socket adalah objek socket yang mewakili koneksi antara server dan klien.
+- Menentukan Direktori Server: server_dir = os.path.dirname(__file__) digunakan untuk mendapatkan direktori tempat program server berjalan. __file__ adalah nama file skrip saat ini.
+- Berubah ke Direktori Server: os.chdir(server_dir) digunakan untuk mengubah direktori kerja saat ini ke direktori tempat program server berjalan. Ini diperlukan agar kita dapat menggunakan fungsi os.listdir() untuk mendapatkan daftar file dan direktori di dalamnya.
+- Membuat Daftar File dan Direktori: Melalui loop for, program mengiterasi melalui setiap file dan direktori di dalam server_dir. Untuk setiap item, nama file dan ukuran file diambil menggunakan os.path.getsize(). Informasi ini kemudian ditambahkan ke dalam daftar files_info.
+- Format Daftar File: Daftar file dan direktori diubah menjadi string dengan menggunakan "\n".join(files_info), sehingga setiap item dipisahkan dengan baris baru.
+- Mengirim Daftar ke Klien: String yang berisi daftar file dan direktori dikirim kepada klien menggunakan client_socket.send(files_list.encode()). Sebelumnya, string tersebut diubah menjadi byte dengan menggunakan encode().
+- Pesan Informasi: Pesan "Mengirim daftar file ke klien." dicetak ke konsol untuk memberi tahu bahwa daftar file telah berhasil dikirim ke klien.
+
 ## Dokumentasi dan Penjelasan Command
 
 ### Command 'ls'
