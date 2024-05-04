@@ -270,6 +270,18 @@ if __name__ == "__main__":
 - Pengiriman Konfirmasi ke Klien: Setelah file selesai diunggah, server mengirim pesan "File berhasil diunggah" kepada klien menggunakan client_socket.send(b"File berhasil diunggah").
 - Pengiriman Informasi File: Informasi mengenai nama file dan ukuran file dikirim kembali kepada klien sebagai konfirmasi. Pesan tersebut dikodekan ke dalam bentuk byte sebelum dikirim.
 
+![7](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/5a1242e4-ebe8-4344-aa77-cac3f8bd640a)
+
+- Pemeriksaan Ketersediaan File: if os.path.exists(file_name) and os.path.isfile(file_name): digunakan untuk memeriksa apakah file yang akan dihapus ada di server dan apakah itu merupakan sebuah file (bukan direktori).
+- Penghapusan File: Jika file tersebut tersedia, fungsi os.remove(file_name) digunakan untuk menghapus file tersebut dari sistem operasi.
+- Konfirmasi Kepada Klien: Setelah file dihapus, pesan "File berhasil dihapus" dikirim kepada klien menggunakan client_socket.send(b"File berhasil dihapus").
+- Pesan Jika File Tidak Ditemukan: Jika file tidak ditemukan di server, pesan "File tidak ditemukan" dikirim kepada klien menggunakan client_socket.send(b"File tidak ditemukan").
+
+![8](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/f61e5ace-bc6c-4b72-a8fa-d2e492be6212)
+
+- Fungsi get_file_size: Fungsi ini bertanggung jawab untuk mengirim informasi tentang ukuran file kepada klien. Mari kita bahas bagian per bagian:a. Pemeriksaan Ketersediaan File: if os.path.exists(file_name) and os.path.isfile(file_name): digunakan untuk memeriksa apakah file yang diminta oleh klien ada di server dan apakah itu merupakan sebuah file (bukan direktori).b. Penghitungan Ukuran File: Jika file tersebut tersedia, file_size = os.path.getsize(file_name) digunakan untuk mengambil ukuran file. Kemudian, informasi tentang nama file dan ukuran file dikirim kepada klien dengan menggunakan client_socket.send("{}\t{}".format(file_name, format_size(file_size)).encode()). Ini mencakup nama file dan ukuran file dalam format yang sesuai.c. Pengiriman Ukuran File dalam Byte: Ukuran file dalam byte juga dikirim kepada klien dengan menggunakan client_socket.send(str(file_size).encode()). Ini dilakukan untuk memberikan ukuran file dalam bentuk bilangan bulat yang mudah diproses oleh klien jika diperlukan.d. Penanganan Jika File Tidak Ditemukan: Jika file tidak ditemukan di server, pesan "File tidak ditemukan" dikirim kepada klien menggunakan client_socket.send(b"File tidak ditemukan").
+- Fungsi format_size: Fungsi ini menerima ukuran file dalam byte dan mengembalikan string yang memformat ukuran tersebut ke dalam format yang lebih mudah dibaca.a. Ukuran file dibagi-bagi menjadi kategori berdasarkan ukurannya (bytes, KB, atau MB).b. Jika ukuran file kurang dari 1024 byte, ukurannya ditampilkan langsung dalam byte.c. Jika ukuran file kurang dari 1024 * 1024 byte (1 MB), ukurannya ditampilkan dalam KB dengan dua desimal.d. Jika ukuran file sama atau lebih besar dari 1 MB, ukurannya ditampilkan dalam MB dengan dua desimal.
+
 ## Dokumentasi dan Penjelasan Command
 
 ### Command 'ls'
