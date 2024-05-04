@@ -394,7 +394,7 @@ if __name__ == "__main__":
 ## Soal 1 dan 2
 Soal 1 dan 2 sudah ditambahkan di codingannya, penjelasan ada di bagian setiap fiturnya
 
-### Soal 3
+## Soal 3
 Dalam program sebelumnya, jika klien mengirimkan file dengan nama yang sama dengan file yang telah dikirim sebelumnya, maka file yang sudah ada dengan nama tersebut akan ditimpa (overwrite) oleh file yang baru dikirim. Hal ini dapat menyebabkan berbagai masalah. Salah satu solusi untuk mengatasi masalah ini adalah dengan menambahkan penanganan khusus di sisi server untuk menghindari penimpaan file. Salah satu pendekatan yang dapat dilakukan adalah dengan menambahkan penanganan untuk mengubah nama file baru yang akan diunggah sehingga tidak ada konflik dengan file yang telah ada.
 
 ![image](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/f3fe85e0-cf4f-435c-9c8f-27b0f5afa315)
