@@ -226,6 +226,23 @@ if __name__ == "__main__":
 - TCP_PORT: Variabel ini menentukan nomor port yang akan digunakan oleh server. Dalam hal ini, port yang dipilih adalah 8080.
 - BUFFER_SIZE: Variabel ini menentukan ukuran buffer untuk menerima dan mengirim data antara server dan klien. Dalam kasus ini, ukuran buffer adalah 2048 byte
 
+![3](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/436ff838-501f-450c-b07b-5b56fd4d7c43)
+
+- Definisi Fungsi: def handle_client_connection(client_socket): adalah deklarasi fungsi yang mengambil client_socket sebagai argumen. client_socket adalah objek socket yang mewakili koneksi antara server dan klien.
+- Loop Tanpa Batas: while True: merupakan loop tanpa batas yang berjalan selama koneksi dengan klien aktif.
+- Menerima Perintah dari Klien: command = client_socket.recv(BUFFER_SIZE).decode() digunakan untuk menerima data (perintah) dari klien. Data yang diterima diubah menjadi string menggunakan decode().
+  
+- Pemeriksaan Perintah: Setelah menerima perintah, dilakukan pemeriksaan untuk menentukan tindakan yang akan diambil.
+    - Jika perintah kosong (tidak ada data yang diterima), loop akan dihentikan dengan break.
+    - Jika perintah tidak kosong, perintah tersebut akan diproses.
+    - Jika perintah adalah "ls", fungsi list_files akan dipanggil untuk menampilkan daftar file dan direktori.
+    - Jika perintah dimulai dengan "download", fungsi send_file akan dipanggil untuk mengirim file kepada klien.
+    - Jika perintah dimulai dengan "upload", fungsi receive_file akan dipanggil untuk menerima file dari klien.
+    - Jika perintah dimulai dengan "rm", fungsi delete_file akan dipanggil untuk menghapus file.
+    - Jika perintah dimulai dengan "size", fungsi get_file_size akan dipanggil untuk mendapatkan ukuran file.
+    - Jika perintah tidak sesuai dengan opsi yang ada, server akan mengirim pesan kepada klien untuk memasukkan perintah yang valid.
+    - 
+-Menutup Koneksi: Setelah semua perintah selesai diproses, koneksi dengan klien ditutup menggunakan client_socket.close().
 
 ## Dokumentasi dan Penjelasan Command
 
