@@ -220,6 +220,11 @@ if __name__ == "__main__":
     - socket digunakan untuk membuat dan mengelola koneksi jaringan.
     - os digunakan untuk berinteraksi dengan sistem operasi, seperti operasi file dan direktori.
 
+![2](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/ea89b4d4-b42a-4d3a-88f9-f74b31f6154f)
+
+- TCP_IP: Variabel ini menentukan alamat IP yang akan digunakan oleh server. Nilainya adalah "127.0.0.1".
+- TCP_PORT: Variabel ini menentukan nomor port yang akan digunakan oleh server. Dalam hal ini, port yang dipilih adalah 8080.
+- BUFFER_SIZE: Variabel ini menentukan ukuran buffer untuk menerima dan mengirim data antara server dan klien. Dalam kasus ini, ukuran buffer adalah 2048 byte
 
 
 ## Dokumentasi dan Penjelasan Command
