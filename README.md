@@ -254,6 +254,13 @@ if __name__ == "__main__":
 - Mengirim Daftar ke Klien: String yang berisi daftar file dan direktori dikirim kepada klien menggunakan client_socket.send(files_list.encode()). Sebelumnya, string tersebut diubah menjadi byte dengan menggunakan encode().
 - Pesan Informasi: Pesan "Mengirim daftar file ke klien." dicetak ke konsol untuk memberi tahu bahwa daftar file telah berhasil dikirim ke klien.
 
+![5](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/8f2599e6-b918-423c-a006-3be6793bef7e)
+
+- Definisi Fungsi: def send_file(client_socket, file_name): adalah deklarasi fungsi yang mengambil dua argumen, yaitu client_socket (objek socket yang mewakili koneksi antara server dan klien) dan file_name (nama file yang akan dikirim).
+- Pemeriksaan Ketersediaan File: if os.path.exists(file_name) and os.path.isfile(file_name): digunakan untuk memeriksa apakah file yang diminta oleh klien tersedia di server dan apakah itu merupakan sebuah file (bukan direktori).
+- Mengirim Informasi File: Jika file tersebut tersedia, ukuran file dihitung menggunakan os.path.getsize(file_name) dan pesan yang berisi informasi nama file dan ukuran file dikirim kepada klien menggunakan client_socket.send("{}\t{}".format(file_name, format_size(file_size)).encode()). Pesan ini dikodekan ke dalam bentuk byte sebelum dikirim.
+- Penanganan Jika File Tidak Ditemukan: Jika file tidak ditemukan di server, pesan "File tidak ditemukan" dikirim kepada klien menggunakan client_socket.send(b"File tidak ditemukan").
+
 ## Dokumentasi dan Penjelasan Command
 
 ### Command 'ls'
