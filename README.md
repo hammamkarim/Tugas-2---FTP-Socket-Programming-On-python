@@ -336,7 +336,7 @@ if __name__ == "__main__":
 - Penutupan Socket: Setelah pengguna memilih untuk keluar (dengan memasukkan "byebye"), program menutup socket klien dengan menggunakan client_socket.close().
 - Eksekusi Fungsi Main: if __name__ == "__main__": memeriksa apakah skrip ini dieksekusi secara langsung (bukan diimpor sebagai modul oleh skrip lain). Jika ya, maka fungsi main() akan dieksekusi.
 
-## Dokumentasi dan Penjelasan Command
+## Dokumentasi Command
 
 ![Server](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/661f1b89-29dc-4b7d-b1c5-c73622d0fdfb)
 
