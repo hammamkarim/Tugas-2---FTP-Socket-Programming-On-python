@@ -325,6 +325,17 @@ if __name__ == "__main__":
 - Penerimaan Konfirmasi dari Server: Setelah file selesai diunggah, klien menerima konfirmasi dari server menggunakan client_socket.recv(BUFFER_SIZE).decode(). Pesan konfirmasi ini dicetak ke konsol agar pengguna dapat melihatnya.
 - Penanganan Kesalahan: Jika terjadi kesalahan selama proses mengunggah file, pengecualian akan ditangkap dan pesan kesalahan akan dicetak ke konsol menggunakan print("Terjadi kesalahan saat mengunggah file:", e).
 
+![14](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/5e057538-48e5-4a25-90db-43866abd0ca1)
+
+- Definisi Fungsi Main: def main(): adalah deklarasi fungsi main yang merupakan tempat dimulainya eksekusi program klien.
+- Membuat Socket Klien: Program pertama-tama membuat objek socket klien menggunakan socket.socket(socket.AF_INET, socket.SOCK_STREAM). .
+- Loop Interaksi Pengguna: Program memasuki loop while True: yang berjalan tanpa henti. Di dalam loop ini, program menampilkan menu perintah kepada pengguna dan menunggu input perintah dari pengguna.
+- Kondisi Pengolahan Perintah: Program memproses perintah yang dimasukkan oleh pengguna sesuai dengan kondisi-kondisi berikut:
+    - Jika perintah adalah "byebye", program keluar dari loop.
+    - Jika perintah adalah "connme", program mencoba untuk membuat koneksi sepenuhnya ke server dengan menggunakan fungsi connme.
+- Penutupan Socket: Setelah pengguna memilih untuk keluar (dengan memasukkan "byebye"), program menutup socket klien dengan menggunakan client_socket.close().
+- Eksekusi Fungsi Main: if __name__ == "__main__": memeriksa apakah skrip ini dieksekusi secara langsung (bukan diimpor sebagai modul oleh skrip lain). Jika ya, maka fungsi main() akan dieksekusi.
+
 ## Dokumentasi dan Penjelasan Command
 
 ### Command 'ls'
