@@ -282,6 +282,16 @@ if __name__ == "__main__":
 - Fungsi get_file_size: Fungsi ini bertanggung jawab untuk mengirim informasi tentang ukuran file kepada klien. 
 - Fungsi format_size: Fungsi ini menerima ukuran file dalam byte dan mengembalikan string yang memformat ukuran tersebut ke dalam format yang lebih mudah dibaca.a. Ukuran file dibagi-bagi menjadi kategori berdasarkan ukurannya (bytes, KB, atau MB).b. Jika ukuran file kurang dari 1024 byte, ukurannya ditampilkan langsung dalam byte.c. Jika ukuran file kurang dari 1024 * 1024 byte (1 MB), ukurannya ditampilkan dalam KB dengan dua desimal.d. Jika ukuran file sama atau lebih besar dari 1 MB, ukurannya ditampilkan dalam MB dengan dua desimal.
 
+![9](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/ab07eaf2-bb26-44fe-b60f-adb871666393)
+
+- Definisi Fungsi Main: def main(): adalah deklarasi fungsi main yang merupakan tempat dimulainya eksekusi program.
+- Membuat Socket Server: Baris pertama di dalam fungsi main membuat objek socket untuk server menggunakan socket.socket(socket.AF_INET, socket.SOCK_STREAM). Ini menghasilkan socket menggunakan alamat IPv4 dan protokol TCP/IP.
+- Mengikat Socket ke Alamat dan Port: Baris berikutnya, server_socket.bind((TCP_IP, TCP_PORT)), mengikat socket server ke alamat IP dan port yang telah ditentukan sebelumnya.
+- Mendengarkan Koneksi Masuk: server_socket.listen(5) menginstruksikan socket server untuk mulai mendengarkan koneksi masuk. Argument 5 menentukan jumlah maksimum antrian koneksi yang dapat ditangani secara bersamaan.
+- Menampilkan Pesan: Pesan "FTP Server is listening on {} : {}".format(TCP_IP, TCP_PORT) dicetak ke konsol untuk memberi tahu bahwa server telah dimulai dan sedang mendengarkan koneksi di alamat IP dan port yang telah ditentukan.
+- Loop Penerimaan Koneksi: Selanjutnya, program memasuki loop while True: yang berjalan tanpa henti. Di dalam loop ini, server terus-menerus menerima koneksi dari klien menggunakan server_socket.accept(). Setiap kali ada koneksi baru, server menerima koneksi tersebut dan menjalankan fungsi handle_client_connection untuk menangani komunikasi dengan klien.
+- Pengecekan untuk Eksekusi Main: if __name__ == "__main__": memeriksa apakah skrip ini dieksekusi secara langsung (bukan diimpor sebagai modul oleh skrip lain). Jika ya, maka fungsi main() akan dieksekusi.
+
 ## Dokumentasi dan Penjelasan Command
 
 ### Command 'ls'
