@@ -309,6 +309,13 @@ if __name__ == "__main__":
 - Menampilkan Respons: Respons dari server kemudian dicetak ke konsol menggunakan print(response), sehingga pengguna dapat melihat hasil dari perintah yang dikirimkan.
 - Penanganan Kesalahan: Jika terjadi kesalahan selama proses pengiriman perintah atau penerimaan respons, pengecualian akan ditangkap dan pesan kesalahan akan dicetak ke konsol.
 
+![12](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/ed4c8ad5-36f0-4864-8136-b6871e9c08f9)
+
+- Definisi Fungsi: def connme(client_socket): adalah deklarasi fungsi yang mengambil satu argumen, yaitu client_socket (objek socket yang mewakili koneksi antara klien dan server).
+- Membuat Koneksi: Dalam blok try, client_socket.connect((TCP_IP, TCP_PORT)) digunakan untuk mencoba menyambungkan klien dengan server. 
+- Pesan Sukses: Jika koneksi berhasil, pesan "Koneksi berhasil tersambung!" dicetak ke konsol untuk memberi tahu pengguna bahwa koneksi berhasil dibuat.
+- Penanganan Kesalahan: Jika terjadi kesalahan selama proses menyambungkan klien dengan server, pengecualian akan ditangkap dan pesan kesalahan akan dicetak ke konsol menggunakan print("Koneksi gagal!", e).
+
 ## Dokumentasi dan Penjelasan Command
 
 ### Command 'ls'
