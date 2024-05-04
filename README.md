@@ -261,6 +261,15 @@ if __name__ == "__main__":
 - Mengirim Informasi File: Jika file tersebut tersedia, ukuran file dihitung menggunakan os.path.getsize(file_name) dan pesan yang berisi informasi nama file dan ukuran file dikirim kepada klien menggunakan client_socket.send("{}\t{}".format(file_name, format_size(file_size)).encode()). Pesan ini dikodekan ke dalam bentuk byte sebelum dikirim.
 - Penanganan Jika File Tidak Ditemukan: Jika file tidak ditemukan di server, pesan "File tidak ditemukan" dikirim kepada klien menggunakan client_socket.send(b"File tidak ditemukan").
 
+![6](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/41f9dd6e-83c3-4cdd-a09c-bdd95c7dccbb)
+
+- Penerimaan Nama File: file_name = client_socket.recv(BUFFER_SIZE).decode() digunakan untuk menerima nama file yang dikirim oleh klien. Nama file ini di-decode dari byte menjadi string.
+- Penanganan Nama File yang Sudah Ada: Jika file dengan nama yang sama sudah ada di server, maka nama file tersebut akan diubah agar tidak terjadi konflik. Hal ini dilakukan dengan menambahkan nomor urut pada nama file yang baru, hingga nama file yang unik ditemukan.
+- Penerimaan Data File: Setelah nama file ditentukan, data file dikirim oleh klien dan diterima oleh server menggunakan client_socket.recv(BUFFER_SIZE).
+- Penyimpanan Data ke File: Data file yang diterima disimpan di server dengan membuka file dengan mode "wb" (write binary) dan menulis data yang diterima ke dalamnya.
+- Pengiriman Konfirmasi ke Klien: Setelah file selesai diunggah, server mengirim pesan "File berhasil diunggah" kepada klien menggunakan client_socket.send(b"File berhasil diunggah").
+- Pengiriman Informasi File: Informasi mengenai nama file dan ukuran file dikirim kembali kepada klien sebagai konfirmasi. Pesan tersebut dikodekan ke dalam bentuk byte sebelum dikirim.
+
 ## Dokumentasi dan Penjelasan Command
 
 ### Command 'ls'
