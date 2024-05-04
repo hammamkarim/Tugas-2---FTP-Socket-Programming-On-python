@@ -301,6 +301,14 @@ if __name__ == "__main__":
 - TCP_PORT: Port yang digunakan oleh server FTP untuk menerima koneksi. Dalam hal ini, port 8080 digunakan.
 - BUFFER_SIZE: Ukuran buffer untuk menerima dan mengirim data antara klien dan server. Dalam kasus ini, ukuran buffer adalah 2048 byte.
 
+![11](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/e8875ebd-00ea-45c0-a20c-fc3cf56399ef)
+
+- Definisi Fungsi: def send_command(command, client_socket): adalah deklarasi fungsi yang mengambil dua argumen, yaitu command (perintah yang akan dikirim) dan client_socket (objek socket yang mewakili koneksi antara klien dan server).
+- Mengirim Perintah: client_socket.send(command.encode()) digunakan untuk mengirim perintah dari klien ke server. P
+- Menerima Respons: Setelah perintah dikirim, klien menunggu respons dari server menggunakan client_socket.recv(BUFFER_SIZE). Respons t
+- Menampilkan Respons: Respons dari server kemudian dicetak ke konsol menggunakan print(response), sehingga pengguna dapat melihat hasil dari perintah yang dikirimkan.
+- Penanganan Kesalahan: Jika terjadi kesalahan selama proses pengiriman perintah atau penerimaan respons, pengecualian akan ditangkap dan pesan kesalahan akan dicetak ke konsol.
+
 ## Dokumentasi dan Penjelasan Command
 
 ### Command 'ls'
