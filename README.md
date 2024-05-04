@@ -387,3 +387,24 @@ if __name__ == "__main__":
 
 # Modifikasi Tugas-2-FTP-Socket-Programming-On-python
 
+1. Modifikasi agar file yang diterima dimasukkan ke folder tertentu 
+2. Modifikasi program agar memberikan feedback nama file dan filesize yang diterima.
+3. Apa yang terjadi jika pengirim mengirimkan file dengan nama yang sama dengan file yang telah dikirim sebelumnya? Dapat menyebabkan masalah kah ? Lalu bagaimana solusinya? Implementasikan ke dalam program, solusi yang Anda berikan.
+
+## Soal 1 dan 2
+Soal 1 dan 2 sudah ditambahkan di codingannya, penjelasan ada di bagian setiap fiturnya
+
+### Soal 3
+Dalam program sebelumnya, jika klien mengirimkan file dengan nama yang sama dengan file yang telah dikirim sebelumnya, maka file yang sudah ada dengan nama tersebut akan ditimpa (overwrite) oleh file yang baru dikirim. Hal ini dapat menyebabkan berbagai masalah. Salah satu solusi untuk mengatasi masalah ini adalah dengan menambahkan penanganan khusus di sisi server untuk menghindari penimpaan file. Salah satu pendekatan yang dapat dilakukan adalah dengan menambahkan penanganan untuk mengubah nama file baru yang akan diunggah sehingga tidak ada konflik dengan file yang telah ada.
+
+![image](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/f3fe85e0-cf4f-435c-9c8f-27b0f5afa315)
+
+![new1](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/96459493-6b31-414e-b87e-4f8d9ec49843)
+
+![new2](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/236821b6-3704-408e-af65-a695cf1a4b85)
+
+![new3](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/3877d52f-aee8-4181-b05e-a94281242c75)
+
+![new4](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/f7f54afe-d1c3-477d-91c9-16aa7b8e7c36)
+
+
