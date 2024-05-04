@@ -316,6 +316,15 @@ if __name__ == "__main__":
 - Pesan Sukses: Jika koneksi berhasil, pesan "Koneksi berhasil tersambung!" dicetak ke konsol untuk memberi tahu pengguna bahwa koneksi berhasil dibuat.
 - Penanganan Kesalahan: Jika terjadi kesalahan selama proses menyambungkan klien dengan server, pengecualian akan ditangkap dan pesan kesalahan akan dicetak ke konsol menggunakan print("Koneksi gagal!", e).
 
+![13](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/a9c5b7f2-7f36-4793-ad7a-1a85ec85167a)
+
+- Definisi Fungsi: def upload_file(file_name, client_socket): adalah deklarasi fungsi yang mengambil dua argumen, yaitu file_name (nama file yang akan diunggah) dan client_socket (objek socket yang mewakili koneksi antara klien dan server).
+- Mengirim Perintah "upload": Klien pertama kali mengirimkan perintah "upload" kepada server menggunakan client_socket.send(b"upload"). Ini memberi tahu server bahwa klien akan mengunggah sebuah file.
+- Mengirim Nama File: Kemudian, nama file yang akan diunggah dikirim kepada server menggunakan client_socket.send(file_name.encode()). 
+- Membuka dan Mengirim Data File: Fungsi membuka file yang akan diunggah dalam mode baca binary ("rb") menggunakan open(file_name, "rb") as file. Kemudian, data dari file tersebut dibaca dan dikirim kepada server menggunakan client_socket.send(data).
+- Penerimaan Konfirmasi dari Server: Setelah file selesai diunggah, klien menerima konfirmasi dari server menggunakan client_socket.recv(BUFFER_SIZE).decode(). Pesan konfirmasi ini dicetak ke konsol agar pengguna dapat melihatnya.
+- Penanganan Kesalahan: Jika terjadi kesalahan selama proses mengunggah file, pengecualian akan ditangkap dan pesan kesalahan akan dicetak ke konsol menggunakan print("Terjadi kesalahan saat mengunggah file:", e).
+
 ## Dokumentasi dan Penjelasan Command
 
 ### Command 'ls'
