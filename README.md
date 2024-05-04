@@ -338,25 +338,52 @@ if __name__ == "__main__":
 
 ## Dokumentasi dan Penjelasan Command
 
+![Server](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/661f1b89-29dc-4b7d-b1c5-c73622d0fdfb)
+
+### Command 'connme'
+
+![connme1](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/3a296bfa-5656-4679-95c3-f71713425392)
+
+![connme2](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/2ca861f2-a3f0-47d5-8867-9ed6fb4ba9ae)
+
 ### Command 'ls'
 
+![ls1](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/95d91e33-34a7-4478-be34-65ba5b316afe)
 
+![ls2](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/e527b1e5-51f0-4e6f-ba08-aedfd6ce4dc1)
 
 ### Command 'rm'
+
+![rm1](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/ee93ee2b-3593-48f4-be41-91d3a8a72432)
+
+![rm2](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/e2a54fb2-2d5d-4d14-864d-f99369099717)
 
 
 ### Command 'download'
 
+![download1](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/c3c9451a-d0b2-48d1-9a75-b6405fd88d9e)
+
+![download2](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/308d5c2a-a936-47c1-a981-5bc43daf0f93)
+
   
 ### Command 'upload'
+
+![upload1](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/da718622-36f0-48bc-9f4a-4b2f2dbe631c)
+
+![upload2](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/37cab3fb-df3a-4e8e-ba85-74eefed3cb9f)
 
 
 ### Command 'size'
 
+![size1](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/e2761d6b-069f-4218-8fbe-56ec14279abb)
+
+![size2](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/3f8317fc-78c7-4063-a2c2-f35e65e852f7)
+
 
 ### Command 'byebye'
 
-### Command 'connme'
+![image](https://github.com/hammamkarim/Tugas-2---FTP-Socket-Programming-On-python/assets/114963944/c58e3a11-b457-4ade-8e7e-ccfcb8208ca6)
+
 
 # Modifikasi Tugas-2-FTP-Socket-Programming-On-python
 
